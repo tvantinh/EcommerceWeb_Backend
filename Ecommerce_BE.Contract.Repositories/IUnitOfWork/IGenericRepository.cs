@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace Ecommerce_BE.Contract.Repositories.IUnitOfWork
+namespace Ecommerce_BE.Contract.Repositories.Repositories
 {
-    public interface IGenericRepository
+    public interface IGenericRepository<T> where T : class
     {
-        //protected readonly DatabaseContext _context;
+        IQueryable<T> Entities { get; }
+        Task<IList<T>> GetAllAsync();
+        Task<T?> GetByIdAsync(object id);
+        Task AddAsync(T obj);
+        Task UpdateAsync(T obj);
+        Task DeleteAsync(object id);
+        Task SaveAsync();
     }
 }
