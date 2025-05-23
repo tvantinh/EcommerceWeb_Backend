@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Ecommerce_BE.Middleware\Ecommerce_BE.Middleware.csproj" />
     <ProjectReference Include="..\Ecommerce_BE.Services\Ecommerce_BE.Services.csproj" />
   </ItemGroup>
 

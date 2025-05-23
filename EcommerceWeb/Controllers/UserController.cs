@@ -20,6 +20,7 @@ namespace EcommerceWeb.Controllers
         {
             IList<User> Users = await _userService.GetAll();
             return Ok(Users);
+
         }
 
     }

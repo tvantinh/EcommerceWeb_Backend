@@ -1,4 +1,5 @@
 using Ecommecre_BE.Repositories.DataContext;
+using Ecommerce_BE.Middleware;
 using EcommerceWeb;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddConfig(builder.Configuration);
 var app = builder.Build();
+app.UseAPIResponseWrapperMiddleware();
 
 if (app.Environment.IsDevelopment())
 {
