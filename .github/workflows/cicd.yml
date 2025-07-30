@@ -39,6 +39,9 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      - name: List files for debug
+        run: ls -R
+        
       - name: Build Docker image
         run: docker build -f EcommerceWeb/Dockerfile -t $IMAGE_NAME:latest -t $IMAGE_NAME:${{ env.IMAGE_TAG }} .
 
