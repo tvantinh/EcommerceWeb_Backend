@@ -1,4 +1,4 @@
-using Ecommecre_BE.Repositories.DataContext;
+using Ecommerce_BE.Repositories.DataContext;
 using Ecommerce_BE.Middleware;
 using EcommerceWeb;
 using Microsoft.EntityFrameworkCore;

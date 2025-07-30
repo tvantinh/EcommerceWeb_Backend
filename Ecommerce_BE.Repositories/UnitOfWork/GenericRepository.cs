@@ -1,8 +1,8 @@
-﻿using Ecommecre_BE.Repositories.DataContext;
+﻿using Ecommerce_BE.Repositories.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Ecommerce_BE.Contract.Repositories.Repositories;
 
-namespace Ecommecre_BE.Repositories.UnitOfWork
+namespace Ecommerce_BE.Repositories.UnitOfWork
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {

@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce_BE.Contract.Repos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce_BE.Core", "Ecommerce_BE.Core\Ecommerce_BE.Core.csproj", "{D93E0403-962C-44A5-A3FA-CF8349B9F447}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommecre_BE.Repositories", "Ecommecre_BE.Repositories\Ecommecre_BE.Repositories.csproj", "{A365675A-94F0-4A7A-850E-DE0F3EE037D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce_BE.Repositories", "Ecommerce_BE.Repositories\Ecommerce_BE.Repositories.csproj", "{A365675A-94F0-4A7A-850E-DE0F3EE037D7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce_BE.Services", "Ecommerce_BE.Services\Ecommerce_BE.Services.csproj", "{271C7A9F-A5A0-480A-BF10-69936882280A}"
 EndProject

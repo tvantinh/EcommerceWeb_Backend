@@ -1,4 +1,4 @@
-﻿using Ecommecre_BE.Repositories.DataContext;
+﻿using Ecommerce_BE.Repositories.DataContext;
 using Ecommerce_BE.Contract.Services.IService;
 using Microsoft.EntityFrameworkCore;
 using Ecommerce_BE.Services.Service;

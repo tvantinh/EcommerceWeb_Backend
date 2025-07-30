@@ -7,7 +7,7 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ecommecre_BE.Repositories.DataContext
+namespace Ecommerce_BE.Repositories.DataContext
 {
     public class DatabaseContext: DbContext
     {
