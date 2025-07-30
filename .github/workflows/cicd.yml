@@ -9,7 +9,7 @@ on:
       - develop
 
 env:
-  IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/EcommerceWeb
+  IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/ecommerceweb
   IMAGE_TAG: ${{ github.sha }}
 
 jobs:
