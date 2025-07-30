@@ -1,5 +1,5 @@
 ﻿using Azure.Core;
-using Ecommecre_BE.Repositories.UnitOfWork;
+using Ecommerce_BE.Repositories.UnitOfWork;
 using Ecommerce_BE.Contract.Repositories.IUnitOfWork;
 using Ecommerce_BE.Contract.Services.IService;
 using Ecommerce_BE.Services.Service;
