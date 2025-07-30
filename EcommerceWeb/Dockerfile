@@ -12,8 +12,8 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["EcommerceWeb/EcommerceWeb.csproj", "EcommerceWeb/"]
-RUN dotnet restore "./EcommerceWeb/EcommerceWeb.csproj"
+COPY ["EcommerceWeb.csproj", "EcommerceWeb/"]
+RUN dotnet restore "./EcommerceWeb.csproj"
 COPY . .
 WORKDIR "/src/EcommerceWeb"
 RUN dotnet build "./EcommerceWeb.csproj" -c $BUILD_CONFIGURATION -o /app/build
