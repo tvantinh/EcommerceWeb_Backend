@@ -8,7 +8,7 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 COPY ["EcommerceWeb/EcommerceWeb.csproj", "EcommerceWeb/"]
-COPY ["Ecommecre_BE.Repositories/Ecommerce_BE.Repositories.csproj", "Ecommerce_BE.Repositories/"]
+COPY ["Ecommerce_BE.Repositories/Ecommerce_BE.Repositories.csproj", "Ecommerce_BE.Repositories/"]
 COPY ["Ecommerce_BE.Contract.Repositories/Ecommerce_BE.Contract.Repositories.csproj", "Ecommerce_BE.Contract.Repositories/"]
 COPY ["Ecommerce_BE.Contract.Services/Ecommerce_BE.Contract.Services.csproj", "Ecommerce_BE.Contract.Services/"]
 COPY ["Ecommerce_BE.Services/Ecommerce_BE.Services.csproj", "Ecommerce_BE.Services/"]
