@@ -1,10 +1,10 @@
-﻿using Ecommecre_BE.Repositories.DataContext;
+﻿using Ecommerce_BE.Repositories.DataContext;
 using Ecommerce_BE.Contract.Repositories.IUnitOfWork;
 using Ecommerce_BE.Contract.Repositories.Repositories;
 using System;
 using System.Collections.Generic;
 
-namespace Ecommecre_BE.Repositories.UnitOfWork
+namespace Ecommerce_BE.Repositories.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
