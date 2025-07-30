@@ -1,4 +1,5 @@
 name: CI/CD Pipeline
+
 on:
   push:
     branches:
@@ -8,9 +9,8 @@ on:
       - develop
 
 env:
-  IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/ecommerceweb
+  IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/EcommerceWeb
   IMAGE_TAG: ${{ github.sha }}
-
 
 jobs:
   build:
@@ -40,10 +40,12 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t $IMAGE_NAME:latest -t $IMAGE_NAME:${{ env.IMAGE_TAG }} .
+        run: docker build -f EcommerceWeb/Dockerfile -t $IMAGE_NAME:latest -t $IMAGE_NAME:${{ env.IMAGE_TAG }} EcommerceWeb/
 
       - name: Push Docker image
-        run: docker push $IMAGE_NAME:latest docker push $IMAGE_NAME:${{ env.IMAGE_TAG }}
+        run: |
+          docker push $IMAGE_NAME:latest
+          docker push $IMAGE_NAME:${{ env.IMAGE_TAG }}
 
       - name: Scan Docker image with Trivy
         uses: aquasecurity/trivy-action@0.32.0
