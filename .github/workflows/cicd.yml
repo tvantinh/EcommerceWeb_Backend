@@ -40,7 +40,8 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -f EcommerceWeb/Dockerfile -t $IMAGE_NAME:latest -t $IMAGE_NAME:${{ env.IMAGE_TAG }} EcommerceWeb/
+        run: docker build -f EcommerceWeb/Dockerfile -t $IMAGE_NAME:latest -t $IMAGE_NAME:${{ env.IMAGE_TAG }} .
+        
 
       - name: Push Docker image
         run: |
